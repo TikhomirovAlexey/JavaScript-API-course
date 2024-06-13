@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding-top: 48px;
+}
+
+.schedule-table {
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.schedule-table-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.schedule-table-row:not(:last-child) {
+    border-bottom: 1px solid #000;
+}
+
+.schedule-table-row:nth-child(2n) {
+    background-color: #def2fc;
+}
+
+.schedule-table-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-table-element-add {
+    justify-content: space-around;
+
+}
+
+.schedule-table-element-name:hover {
+    background-color: #c0fcde;
+    cursor: pointer;
+}
+
+.schedule-table-element:not(:last-child) {
+    border-right: 1px solid #000;
+}
+
+.button {
+    padding: 5px 10px;
+    background-color: #c5eafc;
+    border: 1px solid #91d8ff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #91d8ff;
+    cursor: pointer;
+}
